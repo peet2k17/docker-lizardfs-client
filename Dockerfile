@@ -12,4 +12,7 @@ ENV MOUNT=''
 
 RUN mkdir /mnt/lizardfs
 
-CMD [ "mfsmount /mnt/lizardfs" ]
+####################
+# ENTRYPOINT
+####################
+ENTRYPOINT ["/init"]
